@@ -3,7 +3,7 @@ import { createHashRouter } from 'react-router-dom'
 import Loading from '@/components/Loading'
 import IncludesSubmenusWarp from '@/components/IncludesSubmenusWarp'
 import { generateRouterItemKey, flattenRouter } from './helper'
-import LineVscode from '@/pages/LineVscode'
+import resultPage from './resultPage'
 const BaseLayout = lazy(() => import('@/index'))
 const Wecome = lazy(() => import('@/pages/Wecome'))
 const NotPage = lazy(() => import('@/pages/404'))
@@ -100,15 +100,7 @@ const initRouter: RouterType[] = [
           </Suspense>
         )
       },
-      {
-        path: 'lineVscode',
-        label: '线上 vscode',
-        element: (
-          <Suspense fallback={<Loading />}>
-            <LineVscode />
-          </Suspense>
-        )
-      }
+      ...resultPage
     ]
   },
   {
