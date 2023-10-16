@@ -1,4 +1,10 @@
 import { RouterType } from './index'
+/**
+ * 为路由列表中的每个项生成新的键。
+ *
+ * @param {RouterType[]} list - 要生成键的路由项列表。
+ * @return {RouterType[]} - 更新后的带有生成键的列表。
+ */
 export const generateRouterItemKey = (list: RouterType[]): RouterType[] => {
   function deepGenerate(arr: RouterType[], parent?: RouterType): void {
     arr.forEach((item: RouterType) => {
