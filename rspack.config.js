@@ -27,7 +27,7 @@ const config = {
     alias
   },
   entry: {
-    main: path.join(__dirname, './src/app.tsx'),  
+    main: path.join(__dirname, './src/app.tsx')
   },
   // contenthash 内容变了才会更新
   output: {

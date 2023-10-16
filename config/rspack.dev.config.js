@@ -4,7 +4,7 @@ module.exports = {
   watch: true,
   watchOptions: {
     ignored: /node_modules/,
-    poll: true,
+    poll: true
   },
   // // 按需编译
   experiments: {
@@ -18,7 +18,6 @@ module.exports = {
     minimize: false,
     concatenateModules: false,
     usedExports: false,
-    minimizer: [
-    ]
+    minimizer: []
   }
 }
